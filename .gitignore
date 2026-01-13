@@ -1,10 +1,48 @@
-# Logs
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+jspm_packages/
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
 logs
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
+
+# local env files
+.env*.local
+.env
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# database
+emily.db
+emily.db-shm
+emily.db-wal
 
 # Diagnostic reports
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
@@ -14,30 +52,6 @@ pids
 *.pid
 *.seed
 *.pid.lock
-
-# Dependency directories
-node_modules/
-jspm_packages/
-
-# Environment variables
-.env
-.env.local
-.env*.local
-
-# Mac DS_Store file
-**/.DS_Store
-
-# Next.js (webapp-specific)
-emily-ai-webapp/.next/
-emily-ai-webapp/out/
-emily-ai-webapp/build/
-emily-ai-webapp/*.tsbuildinfo
-emily-ai-webapp/node_modules/
-
-# Database files (webapp-specific)
-emily-ai-webapp/emily.db
-emily-ai-webapp/emily.db-shm
-emily-ai-webapp/emily.db-wal
 
 # IDE
 .vscode/
